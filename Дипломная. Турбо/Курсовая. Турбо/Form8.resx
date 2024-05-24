@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>from tkinter import *
+
+root = Tk()
+root.title("Переменные и константы")
+root.geometry("550x400")
+
+def clicked():
+    str221 = str(20 * int(entry22.get()))
+    label221.configure(text = str221)
+    str231 = str(30 * int(entry23.get()))
+    label231.configure(text = str231)
+    str241 = str(10 * int(entry24.get()))
+    label241.configure(text = str241)
+    str251 = str(int(str221) + int(str231) + int(str241))
+    label251.configure(text = str251)
+
+def clear():
+    label221.configure(text="0")
+    entry22.delete(0, END)
+    label231.configure(text="0")
+    entry23.delete(0, END)
+    label241.configure(text="0")
+    entry24.delete(0, END)
+    label251.configure(text="0")
+
+label11 = Label(text = "Меню", bg = "#eee", fg = "red", font = 'arial 16')
+label11.place(x = 100, y = 25)
+
+label12 = Label(text = "Борщ", bg = "#eee", fg = "blue", font = 'arial 12')
+label12.place(x = 50, y = 70)
+label121 = Label(text = "20", bg = "#eee", fg = "blue", font = 'arial 12')
+label121.place(x = 170, y = 70)
+label122 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label122.place(x = 200, y = 70)
+
+label13 = Label(text = "Тефтели с \nвермишелью", bg = "#eee", fg = "blue", font = 'arial 12')
+label13.place(x = 50, y = 120)
+label131 = Label(text = "30", bg = "#eee", fg = "blue", font = 'arial 12')
+label131.place(x = 170, y = 120)
+label132 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label132.place(x = 200, y = 120)
+
+label14 = Label(text = "Компот", bg = "#eee", fg = "blue", font = 'arial 12')
+label14.place(x = 50, y = 180)
+label141 = Label(text = "10", bg = "#eee", fg = "blue", font = 'arial 12')
+label141.place(x = 170, y = 180)
+label142 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label142.place(x = 200, y = 180)
+
+label15 = Label(text = "Приятного \nаппетита!", bg = "#eee", fg = "red", font = 'arial 20')
+label15.place(x = 50, y = 250)
+
+
+label21 = Label(text = "Заказ", bg = "#eee", fg = "red", font = 'arial 16')
+label21.place(x = 400, y = 25)
+
+entry22 = Entry(root, width = 12)
+entry22.place(x=300, y=70)
+label221 = Label(text = "0", bg = "#eee", fg = "blue", font = 'arial 12')
+label221.place(x=420, y=70)
+label222 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label222.place(x=500, y=70)
+
+entry23 = Entry(root, width = 12)
+entry23.place(x=300, y=120)
+label231 = Label(text = "0", bg = "#eee", fg = "blue", font = 'arial 12')
+label231.place(x=420, y=120)
+label232 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label232.place(x=500, y=120)
+
+entry24 = Entry(root, width = 12)
+entry24.place(x=300, y=180)
+label241 = Label(text = "0", bg = "#eee", fg = "blue", font = 'arial 12')
+label241.place(x=420, y=180)
+label242 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label242.place(x=500, y=180)
+
+
+label25 = Label(text = "Сумма:", bg = "#eee", fg = "blue", font = 'arial 12')
+label25.place(x=300, y=250)
+label251 = Label(text = "0", bg = "#eee", fg = "blue", font = 'arial 12')
+label251.place(x=420, y=250)
+label252 = Label(text = "р.", bg = "#eee", fg = "blue", font = 'arial 12')
+label252.place(x=500, y=250)
+
+
+but1 = Button(root, text = "Заказать", command = clicked)
+but1.place(x = 300, y = 300)
+
+but2 = Button(root, text = "Очистить", command = clear)
+but2.place(x = 450, y = 300)
+
+but3 = Button(root, text = "Закрыть", command = exit)
+but3.place(x = 450, y = 350)
+
+root.mainloop()
+</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>import math
+from tkinter import *
+
+root = Tk()
+root.title("Число")
+root.geometry("550x350")
+
+def clicked():
+    str2 = str(float(entry1.get())**2)
+    label21.configure(text = str2)
+    str3 = str(float(entry1.get())**3)
+    label31.configure(text = str3)
+    str4 = str(math.sqrt(float(entry1.get())))
+    label41.configure(text = str4)
+
+def clear():
+    entry1.delete(0, END)
+    label21.configure(text = "")
+    label31.configure(text = "")
+    label41.configure(text = "")
+
+
+label1 = Label(text = "Введите число", bg = "#eee", fg = "black", font = "arial 12")
+label1.place(x = 50, y = 25)
+entry1 = Entry(root, width = 20)
+entry1.place(x = 200, y = 25)
+
+label2 = Label(text = "Квадрат =", bg = "#eee", fg = "black", font = "arial 12")
+label2.place(x = 50, y = 100)
+label21 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label21.place(x = 150, y = 100)
+
+label3 = Label(text = "Куб =", bg = "#eee", fg = "black", font = "arial 12")
+label3.place(x = 50, y = 150)
+label31 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label31.place(x = 100, y = 150)
+
+label4 = Label(text = "Корень квадратный =", bg = "#eee", fg = "black", font = "arial 12")
+label4.place(x = 50, y = 200)
+label41 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label41.place(x = 225, y = 200)
+
+but1 = Button(root, text = "Вычислить", command = clicked)
+but1.place(x = 50, y = 275)
+
+but2 = Button(root, text = "Очистить", command = clear)
+but2.place(x = 200, y = 275)
+
+but3 = Button(root, text = "Закрыть", command = exit)
+but3.place(x = 350, y = 275)
+
+label5 = Label(text = "Дробные числа вводятся \nчерез точку !!!", bg = "#eee", fg = "yellow", font = "arial 10")
+label5.place(x = 375, y = 25)
+
+root.mainloop()</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>from tkinter import *
+import math
+
+root = Tk()
+root.title("Решение квадратного уравнения")
+root.geometry("600x350")
+
+
+def clicked():
+    if float(entry2.get()) == 0 and float(entry3.get()) == 0:
+        d = 'noun'
+        label5.configure(text = "")
+        label51.configure(text = "Ошибка!")
+        label6.configure(text="")
+        label61.configure(text="")
+        label7.configure(text="")
+        label71.configure(text="")
+    else:
+        d = str(float(entry3.get()) ** 2 - 4 * float(entry2.get()) * float(entry4.get()))
+        label5.configure(text="D =")
+        label51.configure(text=d)
+        if float(entry2.get()) == 0:
+            x = str(-1 * float(entry4.get()) / float(entry3.get()))
+            label6.configure(text="X =")
+            label61.configure(text=x)
+            label7.configure(text="")
+            label71.configure(text="")
+        elif float(d) &lt; 0 and float(entry2.get()) != 0:
+            label6.configure(text="Уравнение не имеет корней")
+            label61.configure(text="")
+            label7.configure(text="")
+            label71.configure(text="")
+        elif float(d) == 0 and float(entry2.get()) != 0:
+            x = str(-1 * float(entry3.get()) / (2 * float(entry2.get())))
+            label6.configure(text="X =")
+            label61.configure(text=x)
+            label7.configure(text="")
+            label71.configure(text="")
+        elif float(d) &gt; 0 and float(entry2.get()) != 0:
+            x1 = str(-1 * float(entry3.get()) + math.sqrt(float(d)) / (2 * float(entry2.get())))
+            label6.configure(text="X1 =")
+            label61.configure(text=x1)
+            x2 = str(-1 * float(entry3.get()) - math.sqrt(float(d)) / (2 * float(entry2.get())))
+            label7.configure(text="X2 =")
+            label71.configure(text=x2)
+
+
+label1 = Label(text = "Введите коэффициенты квадратного уравнения", bg = "#eee", fg = "black", font = "arial 16")
+label1.place(x = 75, y = 25)
+
+label2 = Label(text = "A =", bg = "#eee", fg = "black", font = "arial 12")
+label2.place(x = 75, y = 75)
+entry2 = Entry(root, width = 12)
+entry2.place(x = 125, y = 75)
+
+label3 = Label(text = "B =", bg = "#eee", fg = "black", font = "arial 12")
+label3.place(x = 250, y = 75)
+entry3 = Entry(root, width = 12)
+entry3.place(x = 300, y = 75)
+
+label4 = Label(text = "C =", bg = "#eee", fg = "black", font = "arial 12")
+label4.place(x = 425, y = 75)
+entry4 = Entry(root, width = 12)
+entry4.place(x = 475, y = 75)
+
+label5 = Label(text="", bg="#eee", fg="black", font="arial 12")
+label5.place(x=75, y=175)
+label51 = Label(text="", bg="#eee", fg="black", font="arial 12")
+label51.place(x=125, y=175)
+
+label6 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label6.place(x = 75, y = 225)
+label61 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label61.place(x = 125, y = 225)
+
+label7 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label7.place(x = 75, y = 275)
+label71 = Label(text = "", bg = "#eee", fg = "black", font = "arial 12")
+label71.place(x = 125, y = 275)
+
+
+but1 = Button(root, text = "Найти корни уравнения", command = clicked)
+but1.place(x = 250, y = 125)
+
+but2 = Button(root, text = "Закрыть", command = exit)
+but2.place(x = 500, y = 300)
+
+root.mainloop()</value>
+  </data>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>from tkinter import *
+
+root = Tk()
+root.title("Умники и умницы")
+root.geometry("600x350")
+
+def clicked():
+    if int(spin1.get()) == 0:
+        label6.configure(text="Поучи-ка ещё!")
+    elif int(spin1.get()) == 1:
+        label6.configure(text = "Умница!")
+    elif int(spin1.get()) == 2:
+        label6.configure(text = "Поучи-ка ещё!")
+    elif int(spin1.get()) == 3:
+        label6.configure(text="Поучи-ка ещё!")
+    elif int(spin1.get()) == 4:
+        label6.configure(text="Поучи-ка ещё!")
+
+def clear():
+    spin1.delete(0, END)
+    label6.configure(text = "")
+
+label = Label(text = "Сколько бит в 10 килобайтах?", bg = "#eee", fg = "blue", font = "arial 14")
+label.place(x = 175, y = 25)
+
+label1 = Label(text = "1", bg = "#eee", fg = "black", font = "arial 14")
+label1.place(x = 75, y = 75)
+label11 = Label(text = "81920", bg = "#eee", fg = "blue", font = "arial 14")
+label11.place(x = 125, y = 75)
+
+label2 = Label(text = "2", bg = "#eee", fg = "black", font = "arial 14")
+label2.place(x = 75, y = 125)
+label21 = Label(text = "10240", bg = "#eee", fg = "blue", font = "arial 14")
+label21.place(x = 125, y = 125)
+
+label3 = Label(text = "3", bg = "#eee", fg = "black", font = "arial 14")
+label3.place(x = 350, y = 75)
+label31 = Label(text = "80", bg = "#eee", fg = "blue", font = "arial 14")
+label31.place(x = 400, y = 75)
+
+label4 = Label(text = "4", bg = "#eee", fg = "black", font = "arial 14")
+label4.place(x = 350, y = 125)
+label41 = Label(text = "10485760", bg = "#eee", fg = "blue", font = "arial 14")
+label41.place(x = 400, y = 125)
+
+label5 = Label(text = "Введи номер ответа", bg = "#eee", fg = "black", font = "arial 14")
+label5.place(x = 75, y = 200)
+
+spin1 = Spinbox(root, from_=0, to = 4, width=5)
+spin1.place(x = 275, y = 205)
+
+label6 = Label(text = "", bg = "#eee", fg = "red", font = "arial 16")
+label6.place(x = 200, y = 250)
+
+but1 = Button(root, text = "Проверь себя!", command=clicked)
+but1.place(x = 450, y = 200)
+
+but2 = Button(root, text = "Очистить", command=clear)
+but2.place(x = 450, y = 250)
+
+but3 = Button(root, text = "Закрыть", command=exit)
+but3.place(x = 450, y = 300)
+root.mainloop()</value>
+  </data>
+</root>

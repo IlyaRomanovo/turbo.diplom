@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox7.Text" xml:space="preserve">
+    <value>from tkinter import *
+
+root=Tk()
+# заголовок окна
+root.title("Entry")
+# ширина и высота окна
+root.geometry("300x250")
+
+def clicked():
+# функция clicked() выводит текст на метку
+  lb.configure(text=entry.get())
+  # функция entry.get() забирает текст из поля ввода
+
+def clear():
+  lb.configure(text="")
+  # функция configure очищает текст на метке
+  entry.delete(0, END)
+  # функция delete удаляет текст в поле ввода
+
+# создаем поле ввода
+entry = Entry(root, width=12)
+
+# устанавливаем поле ввода в окне: 2 колонка, 0 строка
+entry.grid(row=0, column=2)
+
+# создаем метку
+lb = Label(root, text="")
+
+# устанавливаем метку в окне 3 колонка, 0 строка
+lb.grid(row=0, column=3 )
+
+# создаем кнопку, устанавливаем обработчик clicked
+but = Button(root, text="Get", fg="Blue", command=clicked)
+
+# устанавливаем кнопку 1 колонка, 4 строка
+but.grid(row=4, column=1)
+
+# создаем кнопку, устанавливаем обработчик clear
+btClear = Button(root, text="Clear", fg="Blue", command=clear)
+
+# устанавливаем кнопку 3 колонка, 4 строка
+btClear.grid( row=4, column=3)
+
+# запускаем цикл обработки событий
+root.mainloop()
+
+При нажатии на кнопку «Получить» данные из поля ввода переносятся на метку. В примере это текст 
+«Python». При нажатии на кнопку Очистить удаляется текст из поля ввода и очищается текст на метке.</value>
+  </data>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>Элемент управления Entry представляет поле для ввода текста.
+Конструктор этого элемента принимает следующие параметры:
+
+Entry(root, options)
+
+Также как и в элементах управления Label и Button,
+параметры root, options имеют те же самые свойства
+
+Основными методами поля ввода Entry являются:
+
+insert(index, str): вставляет в текстовое поле строку по определенному индексу
+str строка, которая будет вставлена
+index - позиция, куда нужно вставить текст (индекс первой позиции— 0)
+get(): возвращает введенный в текстовое поле текст
+delete(first, last=None): удаляет символ по индексу first. Если указан параметр last, то удаление 
+производится до индекса last. Чтобы удалить до конца, в качестве второго параметра можно 
+использовать значение END.</value>
+  </data>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>from tkinter import *
+count = 0 
+#переменная хранит число кликов
+
+#функция обработки нажатия на кнопку
+def clicked():
+  global count
+  clicks += 1
+  but['text']= "Count={}".format(count)
+
+root = Tk()
+root.title("Clicked")
+root.geometry("300x250")
+
+but = Button(text="Count", bg="#eee", fg="#00F", font="14", command=clicked)
+
+but.pack()
+root.mainloop()
+
+Примечание.
+При записи строки but['text']= "Count={}".format(count) используется метод
+форматирования строк "Count {}".format(count). Фигурными скобками обозначено место, в 
+которое необходимо выполнить вставку значения, указанного в функции format(). Например, 
+переменная count равна 3, получает следующую строку: "Count=3".
+
+Здесь в качестве обработчика события «Нажатие на кнопку» устанавливается функция clicked. В этой 
+функции изменяется переменная count, в которой лежитчисло кликов, и значение которой
+выводится на кнопку. То есть при каждом нажатии, выполняется функция clicked, и значение
+увеличивается</value>
+  </data>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>Пример №1
+
+from tkinter import *
+root=Tk()
+root.title("Button")
+root.geometry("300x250")
+
+# создаем кнопку
+button1=Button(text='OK', width=15, height=5, bg='#eee', fg='blue', font='arial 14')
+# размещаем кнопку
+button1.pack()
+
+root.mainloop()
+
+Примечание.
+Свойства height и width устанавливаются в текстовых единицах. Если нам нужно задать 
+ширину и/или высоту Button в пикселях, то можно добавить виртуальное 
+невидимое изображение 1x1 пикселей. Тогда width и height будут измеряться в пикселях. Кроме 
+того, необходимо установить compound значение "c", чтобы на кнопке отображался как как текст, так 
+и изображение, причем оба они центрируются в окне.
+
+Пример №2
+
+import tkinter
+from tkinter import *
+
+root=Tk()
+root.title("Button")
+root.geometry("300x250")
+
+#добавляем невидимое изображение размером 1x1 пикселей, для того чтобы задать
+# размеры кнопки в пикселях
+pixelVirtual = tkinter.PhotoImage(width=1, height=1)
+button1=Button(text='OK', width=100, height=30, bg='#eee', fg='Blue', font='arial
+14',image=pixelVirtual, compound="c")
+button1.pack()
+root.mainloop()</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>Button - самая обыкновенная кнопка. Конструктор Button принимает следующие параметры:
+
+Button (root, options)
+
+Так же как и у элемента управления Label, root - ссылка на родительское окно
+
+И параметр options имеет те же свойства, что и у метки.
+
+text - какой текст будет отображён на кнопке
+width,height - ширина и длина кнопки, соответственно
+bg - цвет кнопки (сокращенно от background)
+fg - цвет текста на кнопке (сокращённо от foreground)
+font - шрифт и его размер </value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>Создадим окно программы и две метки. Поместим метки в окне программы следующим образом. 
+Первую метку разместим с помощью диспетчера pack(). Для второй метки используем диспетчер 
+place(). Координаты расположения метки зададим с помощью отностительных значений relx = .2 
+(20% ширины окна) и rely = .3 (30% высоты окна).
+
+from tkinter import *
+# задаем окно
+root = Tk()
+
+# задаем заголовок окна
+root.title("Label")
+# устанавливаем размеры окна
+root.geometry("300x250")
+
+# создаем первую метку
+label1 = Label(text = "Hello, World",bg = "#eee", fg = "#00F")
+# размещаем метку в окне
+label1.pack()
+
+# создаем текст
+str = "Мои мечты стремятся вдаль,\Где слышны вопли и рыданья,\Чужую разделить
+печаль\nИ муки тяжкого страданья"
+# \n перевод строки
+
+# создаем вторую метку и в метку помещаем текст
+# значение LEFT выравнивает текст по левому краю
+label2 = Label(text = str, justify = LEFT)
+
+# размещаем метку в окне с помощтью диспетчера компоновки place 
+# place позволяет размещать виджет в заданных координатах верхнего левого угла виджета
+# размещаем метку в относительных координатах
+# диапазон: от 0.0 до 1.0 размера окна
+# relx = .2 это 20% ширины и rely = .3 это 30% высоты окна
+label2.place(relx = .2, rely = .3)
+
+root.mainloop()</value>
+  </data>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>Текстовые метки представлены элементом управления Label. Он позволяет выводить текст без 
+возможности редактирования.
+Для создания Label'a применяется конструктор, который принимает два параметра:
+
+Label(root, options)
+
+Параметр root представляет собой ссылку на родительский контейнер, 
+обычно его можно опустить:
+
+label1 = Label(root, text="Hello, World")
+или
+label1 = Label(text="Hello, World")
+
+Параметр options определяет основные свойства:
+
+text - текст на метке
+width,height - ширина и высота метки соответственно
+bg - цвет самой метки (сокращенно от background)
+fg - цвет текста на метке (сокращённо от foreground)
+font - шрифт и размер</value>
+  </data>
+  <data name="textBox19.Text" xml:space="preserve">
+    <value>На данном этапе вы познакомитесь с основными виджетами и принципами их работы.
+
+Будут разобраны основные виджеты, такие как:
+
+Метка - Label
+Кнопка - Button
+Поле для ввода - Entry
+
+А также будут показаны методы для обработки нажатия, такие как Configure
+
+После прохождения теоретического материала, вам предстоит пройти тестирование
+для его закрепления</value>
+  </data>
+  <data name="textBox8.Text" xml:space="preserve">
+    <value>Параметры виджетов (ширина, высота, и другие свойства) могут быть заданы время создания, но 
+иногда необходимо изменить свойства виджета во время исполнения программы. Для этого 
+используется метод configure.
+
+Пример. 
+Изменим содержимое текста на метке. Новое значение текста возъмем из поля ввода entry
+
+lb.configure(text=entry.get())
+
+здесь get() - это метод, возвращающий текст из поля ввода entry
+
+Метод configure меняет содержимое метки: text=entry.get() - содержимое поля 
+ввода записывается в поле text метки</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>entry = _____(root, width=12)
+entry.grid(row=0, column=2)
+
+lb = Label(root, text="")
+lb.____(row=0, column=3 )
+
+but = ______(root, text="Получить", command=clicked)
+but.grid(row=4, column=1)
+
+btClear = Button(root, text="Очистить", _______=clear)
+btClear.grid( row=4, column=3)
+
+root.________()</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>from _______ import *
+
+root=Tk()
+root.title("GUI на Python")
+root.geometry("300x250")
+
+___ clicked():
+  lb.configure(text=entry.get())
+
+def clear():
+  lb._________(text="")
+  entry.delete(0, END)
+</value>
+  </data>
+</root>
